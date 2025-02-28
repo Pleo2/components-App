@@ -13,7 +13,7 @@ export const Colors = {
     danger: '#d0021b',
     info: '#50e3c2',
 
-    text: '#000000',
+    foreground: '#000000',
     background: '#ffffff',
   },
   dark: {
@@ -25,7 +25,7 @@ export const Colors = {
     danger: '#ff4d4f',
     info: '#4a90e2',
 
-    text: '#ECEDEE',
+    foreground: '#ECEDEE',
     background: '#000000',
   },
 };

@@ -18,7 +18,7 @@ module.exports = {
                     background: Colors.dark.background,
                     surface: Colors.dark.surface,
                     error: Colors.dark.error,
-                    text: Colors.dark.text,
+                    foreground: Colors.dark.foreground,
                     background: Colors.dark.background,
                 },
                 light: {
@@ -28,7 +28,7 @@ module.exports = {
                     background: Colors.light.background,
                     surface: Colors.light.surface,
                     error: Colors.light.error,
-                    text: Colors.dark.text,
+                    foreground: Colors.dark.foreground,
                     background: Colors.dark.background,
                 }
             }
