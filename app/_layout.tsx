@@ -16,13 +16,18 @@ import { useColorScheme } from "@/hooks/useColorScheme";
 import { useThemeColor } from "@/hooks/useThemeColor";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { allRoutes } from "@/constants/Routes";
+import * as NavigationBar from 'expo-navigation-bar'
+import { Platform } from "react-native";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
+const isAndroid = Platform.OS === 'android';
+
 
 export default function RootLayout() {
     const foregroundColor = useThemeColor({}, "foreground");
     const backgroundColor = useThemeColor({}, "background");
+    isAndroid && NavigationBar.setBackgroundColorAsync(backgroundColor);
 
     const [loaded] = useFonts({
         SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf")
@@ -46,6 +51,8 @@ export default function RootLayout() {
             primary: backgroundColor
         }
     };
+
+
 
     return (
         <GestureHandlerRootView

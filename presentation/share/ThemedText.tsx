@@ -18,7 +18,7 @@ const ThemedText = ({ className, type, children, ...rest }: Props) => {
                 type === "h2" ? "text-xl" : undefined,
                 type === "semi-bold" ? "font-semibold" : undefined,
                 type === "link" ? "font-normal underline" : undefined,
-            ].join("")}
+            ].join("")+" "+className}
             style={{
                 color : foregroundColor
             }}

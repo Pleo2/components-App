@@ -25,7 +25,9 @@ const ThemedView = ({
                 backgroundColor: backgroundColor,
                 flex: 1,
                 paddingTop: safe ? safeAreaTop.top : 0,
-                marginHorizontal: margin ? 10 : 0
+                marginHorizontal: margin ? 10 : 0,
+                borderRadius: 24,
+
             }}
             className={`${className}`}
         >

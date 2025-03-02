@@ -30,8 +30,8 @@ const AlertsScreen = () => {
 
   return (
     <ThemedView className='mx-4'>
-      <ThemedText type='h2'>AlertsScreen</ThemedText>
-      <ThemedView className='mx-12'>
+      <ThemedText type='h1'>AlertsScreen</ThemedText>
+      <ThemedView className='mx-12 items-center gap-2'>
         <ThemedButton onPress={createTwoButtonAlert}>create 2 button</ThemedButton>
         <ThemedButton onPress={createThreeButtonAlert}>create 3 button </ThemedButton>
       </ThemedView>
