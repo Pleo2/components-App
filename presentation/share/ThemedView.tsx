@@ -19,6 +19,7 @@ const ThemedView = ({
 }: Props) => {
     const backgroundColor = bgColor || useThemeColor({}, "background");
     const safeAreaTop = useSafeAreaInsets();
+
     return (
         <View
             style={{

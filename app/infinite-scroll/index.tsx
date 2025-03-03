@@ -19,7 +19,7 @@ const InfiniteScrollScreen = () => {
         <ThemedView>
             <FlatList
                 data={numbers}
-                style={{ borderRadius: 24 }}
+                style={{ borderRadius: 12, marginInline: 12, marginBottom: 24 }}
                 renderItem={({ item }) => <FadeInImage style={{
                     height: 400,
                     width: '100%',

@@ -4,13 +4,12 @@ import ThemedView from "@/presentation/share/ThemedView";
 import { router } from "expo-router";
 import { StatusBar } from 'expo-status-bar'
 import React from "react";
-import { Platform } from "react-native";
+import { Platform, View } from "react-native";
 
 const ModalScreen = () => {
     return (
         <>
             <ThemedView
-                bgColor="#111"
                 className="mb-6 rounded-xl items-center justify-center gap-4"
             >
                 <ThemedText type="h2">ModalScreen</ThemedText>
@@ -20,7 +19,6 @@ const ModalScreen = () => {
                 </ThemedButton>
             </ThemedView>
             <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'}/>
-
         </>
     );
 };

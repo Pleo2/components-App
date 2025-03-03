@@ -10,7 +10,6 @@ const ModalScreen = () => {
     return (
         <>
             <ThemedView
-                bgColor="#111"
                 className="mb-6 rounded-xl items-center justify-center"
             >
                 <ThemedText type="h2">soy otro Modal</ThemedText>

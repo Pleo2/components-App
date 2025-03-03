@@ -70,9 +70,8 @@ export default function RootLayout() {
                         headerStyle: {
                             backgroundColor: backgroundColor,
                         },
-                        statusBarStyle: "auto",
-                        statusBarBackgroundColor: backgroundColor,
-
+                        // statusBarStyle: "auto",
+                        // statusBarBackgroundColor: backgroundColor,
                     }}
                 >
                     <Stack.Screen name="index" options={{ title: "Inicio", headerTintColor: foregroundColor }} />
