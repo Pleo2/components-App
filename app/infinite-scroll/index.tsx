@@ -30,7 +30,7 @@ const InfiniteScrollScreen = () => {
                 onEndReachedThreshold={0.6} // al 60% del scroll empieza a cargar la siguiente tanda
                 ListFooterComponent={() => (
                     <View className='h-40 , justify-center'>
-                        <ActivityIndicator size={40} color={primaryColor}></ActivityIndicator>
+                        <ActivityIndicator size={30} color={primaryColor}></ActivityIndicator>
                     </View>
                 )}
             />
